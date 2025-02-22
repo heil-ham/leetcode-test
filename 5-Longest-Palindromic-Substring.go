@@ -4,7 +4,7 @@ func longestPalindrome(s string) string {
     
     for i := 0; i<len(s); i++ {
         
-        if len(s) > 2 && (len(longestPalin) > len(s)/2) || (len(longestPalin) > len(s)-i) {
+        if len(s) > 2 && (len(longestPalin) > len(s)-i) {
             return longestPalin
         }
         substring := string(s[i])
